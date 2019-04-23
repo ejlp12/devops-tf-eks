@@ -10,11 +10,11 @@
 data "aws_ami" "eks-worker" {
   filter {
     name   = "name"
-    values = ["eks-worker-*"]
+    values = ["amazon-eks-node-${aws_eks_cluster.eks-cluster.version}-v*"]
   }
 
   most_recent = true
-  owners      = ["602401143452"] # Amazon Account ID
+  owners      = ["602401143452"] # Amazon EKS AMI Owner Account ID
 }
 
 # EKS currently documents this required userdata for EKS worker nodes to
