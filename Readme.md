@@ -2,7 +2,9 @@ TLDR...
 
 https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
 
-Check variables - dependency on pre-existing pem key named `EKS` to access your worker instances for troubleshouting purposes. Please create manually a Key Pair from AWS Console!!
+Check variables - dependency on pre-existing pem key named `EKS` to access your worker instances for troubleshouting purposes. 
+
+Please create manually a Key Pair from AWS Console first!!
 
 Run using:
 ```
